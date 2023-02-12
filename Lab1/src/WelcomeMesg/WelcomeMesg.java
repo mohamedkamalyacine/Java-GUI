@@ -11,24 +11,22 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 
-/**
- * JavaFX App
- */
 public class WelcomeMesg extends Application {
 
     @Override
     public void start(Stage primaryStage) {
        
         Text t = new Text("Mohamed Kamal - IoT intake 43");
+        t.setId("t");
         Reflection r = new Reflection();
         r.setFraction(0.7f);
         t.setEffect(r);
-        Rectangle rect = new Rectangle(0,0,300,400);
+        Rectangle rect = new Rectangle(0,0,800,400);
         rect.setId("r1");
         StackPane root = new StackPane();
         root.getChildren().add(rect);
         root.getChildren().add(t);
-        Scene scene = new Scene(root, 300, 400);
+        Scene scene = new Scene(root, 800, 400);
          scene.getStylesheets().clear();
         scene.getStylesheets().add(getClass().getResource("/styles/style.css").toExternalForm());
         primaryStage.setTitle("Welcome Boss");

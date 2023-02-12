@@ -1,8 +1,8 @@
-#hw {
+#t {
     -fx-fill: red;
-    -fx-font-weight:bolder;
-    -fx-font-size:36;
-    -fx-box-reflect:below 16px;
+    -fx-font-weight:bold;
+    -fx-font-size:20;
+    -fx-box-reflect:below 10px;
 }
 
 #r1 {
